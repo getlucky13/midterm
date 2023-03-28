@@ -138,5 +138,12 @@ public class AEC {
         + this.inProductionToString() + " " + formattedPrice();
     }
 
-
+    public void displayInfo(){
+        System.out.println("Alternative Energy Car");
+        System.out.println(this.carNameToString());
+        System.out.println(formattedPrice() + " new");
+        System.out.println(doors + " door " + layout + " " + style);
+        System.out.println("Product of " + country);
+        System.out.println(this.inProductionToString());
+    }
 }
