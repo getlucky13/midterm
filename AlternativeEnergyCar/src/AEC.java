@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class AEC { 
     int[] efficiency = new int[2];
     int year, doors, power;
