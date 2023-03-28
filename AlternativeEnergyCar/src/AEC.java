@@ -133,8 +133,8 @@ public class AEC {
 
     @Override
     public String toString() {
-        return "Alternative Energy Car: " + this.carNameToString() + " | " + doors + " doors, " 
-        + layout + " " + style + " , " + power + " horsepower. " + "Product of " + country + ". " 
+        return "Alternative Energy Car: " + this.carNameToString() + " | " + doors + " door " 
+        + layout + " " + style + ", " + power + " horsepower. " + "Product of " + country + ". " 
         + this.inProductionToString() + " " + formattedPrice();
     }
 
