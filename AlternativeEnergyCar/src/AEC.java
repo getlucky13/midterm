@@ -33,7 +33,6 @@ public class AEC implements Comparable<AEC> {
         this.inProduction = inProduction;
     }
 
-
     public int getYear() {
         return year;
     }
