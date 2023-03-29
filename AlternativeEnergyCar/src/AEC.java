@@ -125,8 +125,8 @@ public class AEC {
     }
 
     public String formattedPrice(){ 
-        return String.format("$%,.2f", price);
-    }
+        return String.format("$%,.2f new. ", price);
+    } 
 
     @Override
     public String toString() {
