@@ -1,5 +1,6 @@
 public class Ethanol extends CombustionMotor{
     protected int ethanolPercent, gasEfficiency, ethanolEfficiency;
+
     protected boolean hasDualTanks, takesE100, canFlex;
 
     public Ethanol() {
@@ -54,6 +55,22 @@ public class Ethanol extends CombustionMotor{
 
     public void setCanFlex(boolean canFlex) {
         this.canFlex = canFlex;
+    }
+    
+    public int getEthanolEfficiency() {
+        return ethanolEfficiency;
+    }
+
+    public void setEthanolEfficiency(int ethanolEfficiency) {
+        this.ethanolEfficiency = ethanolEfficiency;
+    }
+
+    public int getGasEfficiency() {
+        return gasEfficiency;
+    }
+
+    public void setGasEfficiency(int gasEfficiency) {
+        this.gasEfficiency = gasEfficiency;
     }
 
     public String formatFuelInfo(){
