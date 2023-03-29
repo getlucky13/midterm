@@ -11,7 +11,6 @@ public class HydrogenElectric extends ElectricMotor {
         this.storageCapacity = storageCapacity;
     }
 
-
     public int getStorageCapacity() {
         return storageCapacity;
     }
@@ -29,5 +28,17 @@ public class HydrogenElectric extends ElectricMotor {
         return "Hydrogen Fuel Cell Car: " + this.carNameToString() + " | " + doors + " door " 
         + layout + " " + style + ", " + power + " horsepower. " + capacityToString() + "Max range of " + this.maxRange + " miles."
         +". " + "Product of " + country + ". " + this.inProductionToString() + " " + formattedPrice();
+    }
+
+    @Override
+    public void displayInfo() {
+        System.out.println("Alternative Energy Car");
+        System.out.println(this.carNameToString());
+        System.out.println(formattedPrice() + " new");
+        System.out.println(doors + " door " + layout + " " + style);
+        System.out.println(capacityToString());
+        System.out.println("Max range: " + maxRange + " miles");
+        System.out.println("Product of " + country);
+        System.out.println(this.inProductionToString());
     }
 }
