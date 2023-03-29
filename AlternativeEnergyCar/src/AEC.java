@@ -1,5 +1,4 @@
 public class AEC { 
-    int[] efficiency = new int[2];
     int year, doors, power;
     double price;
     String manufacturer, model, country, style, layout;
@@ -8,9 +7,8 @@ public class AEC {
     public AEC() {
     }
     
-    public AEC(int[] efficiency, int year, int doors, int power, double price, String manufacturer, String model,
+    public AEC(int year, int doors, int power, double price, String manufacturer, String model,
             String country, String style, String layout, boolean inProduction) {
-        this.efficiency = efficiency;
         this.year = year;
         this.doors = doors;
         this.power = power;
@@ -23,13 +21,6 @@ public class AEC {
         this.inProduction = inProduction;
     }
 
-    public int[] getEfficiency() {
-        return efficiency;
-    }
-
-    public void setEfficiency(int[] efficiency) {
-        this.efficiency = efficiency;
-    }
 
     public int getYear() {
         return year;
@@ -109,10 +100,6 @@ public class AEC {
 
     public void setInProduction(boolean inProduction) {
         this.inProduction = inProduction;
-    }
-
-    public String efficiencyToString() {
-        return efficiency[0] + "mpg city | " + efficiency[1] + "mpg highway";
     }
 
     public String carNameToString(){

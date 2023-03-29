@@ -5,9 +5,9 @@ public class Electric extends AEC{
             
     }
 
-    public Electric(int[] efficiency, int year, int doors, int power, double price, String manufacturer, String model,
+    public Electric(int year, int doors, int power, double price, String manufacturer, String model,
             String country, String style, String layout, boolean inProduction, int maxRange) {
-        super(efficiency, year, doors, power, price, manufacturer, model, country, style, layout, inProduction);
+        super(year, doors, power, price, manufacturer, model, country, style, layout, inProduction);
         this.maxRange = maxRange;
     }
 
