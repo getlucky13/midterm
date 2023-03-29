@@ -40,6 +40,7 @@ public class HydrogenElectric extends ElectricMotor {
     public void setHybrid(boolean isHybrid) {
         this.isHybrid = isHybrid;
     }
+
     public String capacityToString() {
         return hydrogenCapacity + " kg hydrogen capicity. ";
     }
@@ -61,7 +62,7 @@ public class HydrogenElectric extends ElectricMotor {
         System.out.println(this.carNameToString());
         System.out.println(formattedPrice() + " new");
         System.out.println(doors + " door " + layout + " " + style);
-        System.out.println(capacityToString());
+        System.out.println(this.formatPower() + this.capacityToString());
         System.out.println("Max range: " + maxRange + " miles");
         System.out.println("Product of " + country);
         System.out.println(this.inProductionToString());
