@@ -2,7 +2,7 @@ public class EthanolCombustion extends CombustionMotor{
     protected int ethanolPercent, gasEfficiency, ethanolEfficiency;
     protected boolean hasDualTanks, takesE100, canFlex;
 
-    public Ethanol() {
+    public EthanolCombustion() {
         ethanolPercent = 0;
         hasDualTanks = false;
         takesE100 = false;
@@ -11,7 +11,7 @@ public class EthanolCombustion extends CombustionMotor{
         ethanolEfficiency = 0;
     }
 
-    public Ethanol(int year, int doors, int power, double price, String manufacturer, String model, String country,
+    public EthanolCombustion(int year, int doors, int power, double price, String manufacturer, String model, String country,
             String style, String layout, boolean inProduction, double displacement, int cylinders, int ethanolPercent,
             boolean hasDualTanks, boolean takesE100, boolean canFlex, int gasEfficiency, int ethanolEfficiency) {
         super(year, doors, power, price, manufacturer, model, country, style, layout, inProduction, displacement,
@@ -97,6 +97,4 @@ public class EthanolCombustion extends CombustionMotor{
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'formatEfficiency'");
     }
-
-
 }
