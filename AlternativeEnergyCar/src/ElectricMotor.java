@@ -1,14 +1,17 @@
 public abstract class ElectricMotor extends AEC{
     protected int maxRange;
+    protected double capacity;
 
     public ElectricMotor() {
             maxRange = 0;
+            capacity = 0.0;
     }
 
     public ElectricMotor(int year, int doors, int power, double price, String manufacturer, String model,
-            String country, String style, String layout, boolean inProduction, int maxRange) {
+            String country, String style, String layout, boolean inProduction, int maxRange, double capacity) {
         super(year, doors, power, price, manufacturer, model, country, style, layout, inProduction);
         this.maxRange = maxRange;
+        this.capacity = capacity;
     }
 
     public int getMaxRange() {
@@ -19,7 +22,15 @@ public abstract class ElectricMotor extends AEC{
         this.maxRange = maxRange;
     }
 
-    public abstract String capacityToString();
+    public double getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(double capacity) {
+        this.capacity = capacity;
+    }
+
+    public abstract String formatCapacity();
     public abstract String formatPower();
     
     @Override
@@ -35,7 +46,7 @@ public abstract class ElectricMotor extends AEC{
         System.out.println(this.carNameToString());
         System.out.println(formattedPrice());
         System.out.println(doors + " door " + layout + " " + style);
-        System.out.println(this.formatPower() + this.capacityToString());
+        System.out.println(this.formatPower() + this.formatCapacity());
         System.out.println("Max range: " + maxRange + " miles");
         System.out.println("Product of " + country);
         System.out.println(this.inProductionToString());
