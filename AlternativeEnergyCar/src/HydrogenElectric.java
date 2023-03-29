@@ -60,7 +60,7 @@ public class HydrogenElectric extends ElectricMotor {
     public void displayInfo() {
         System.out.println("Alternative Energy Car");
         System.out.println(this.carNameToString());
-        System.out.println(formattedPrice() + " new");
+        System.out.println(formattedPrice());
         System.out.println(doors + " door " + layout + " " + style);
         System.out.println(this.formatPower() + this.capacityToString());
         System.out.println("Max range: " + maxRange + " miles");

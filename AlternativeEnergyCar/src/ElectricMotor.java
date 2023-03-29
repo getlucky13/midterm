@@ -22,7 +22,6 @@ public abstract class ElectricMotor extends AEC{
     public abstract String capacityToString();
     public abstract String formatPower();
     
-
     @Override
     public String toString() {
         return "Electric Car: " + this.carNameToString() + " | " + doors + " door " 
@@ -32,10 +31,11 @@ public abstract class ElectricMotor extends AEC{
     
     @Override
     public void displayInfo() {
-        System.out.println("Alternative Energy Car");
+        System.out.println("Electric Motor Car");
         System.out.println(this.carNameToString());
-        System.out.println(formattedPrice() + " new");
+        System.out.println(formattedPrice());
         System.out.println(doors + " door " + layout + " " + style);
+        System.out.println(this.formatPower() + this.capacityToString());
         System.out.println("Max range: " + maxRange + " miles");
         System.out.println("Product of " + country);
         System.out.println(this.inProductionToString());
