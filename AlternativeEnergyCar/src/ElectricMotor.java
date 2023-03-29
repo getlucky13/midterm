@@ -1,13 +1,11 @@
-public class Electric extends AEC{
-
-
+public class ElectricMotor extends AEC{
     int maxRange;
 
-    public Electric() {
-            
+    public ElectricMotor() {
+            maxRange = 0;
     }
 
-    public Electric(int year, int doors, int power, double price, String manufacturer, String model,
+    public ElectricMotor(int year, int doors, int power, double price, String manufacturer, String model,
             String country, String style, String layout, boolean inProduction, int maxRange) {
         super(year, doors, power, price, manufacturer, model, country, style, layout, inProduction);
         this.maxRange = maxRange;
