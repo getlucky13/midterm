@@ -1,4 +1,6 @@
-public class AEC { 
+import java.lang.Comparable;
+
+public class AEC implements Comparable<AEC> { 
     protected int year, doors, power;
     protected double price;
     protected String manufacturer, model, country, style, layout;
@@ -138,9 +140,13 @@ public class AEC {
     public void displayInfo(){
         System.out.println("Alternative Energy Car");
         System.out.println(this.carNameToString());
-        System.out.println(formattedPrice());
+        System.out.println(formattedPrice() + " new");
         System.out.println(doors + " door " + layout + " " + style);
         System.out.println("Product of " + country);
         System.out.println(this.inProductionToString());
+    }
+
+    public int compareTo(AEC input){
+        return (int) (this.price - input.price);
     }
 }
