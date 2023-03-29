@@ -41,6 +41,10 @@ public class SolarElectric extends ElectricMotor{
         this.roadLegal = roadLegal;
     }
 
+    public String roadLegalFormat() {
+        return "test";
+    }
+
     @Override
     public String toString() {
         return "SolarElectric [engineFormat=" + engineFormat + ", cellEfficiency=" + cellEfficiency + ", roadLegal="
