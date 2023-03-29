@@ -30,7 +30,7 @@ public abstract class CombustionMotor extends AEC{
     }
 
     public abstract String formatEngine();
-
+    public abstract String formatEfficiency();
 
     @Override
     public String toString() {

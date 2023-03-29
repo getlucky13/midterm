@@ -1,5 +1,5 @@
 public class Ethanol extends CombustionMotor{
-    protected int ethanolPercent;
+    protected int ethanolPercent, gasEfficiency, ethanolEfficiency;
     protected boolean hasDualTanks, takesE100, canFlex;
 
     public Ethanol() {
@@ -7,17 +7,21 @@ public class Ethanol extends CombustionMotor{
         hasDualTanks = false;
         takesE100 = false;
         canFlex = false;
+        gasEfficiency = 0;
+        ethanolEfficiency = 0;
     }
 
     public Ethanol(int year, int doors, int power, double price, String manufacturer, String model, String country,
             String style, String layout, boolean inProduction, double displacement, int cylinders, int ethanolPercent,
-            boolean hasDualTanks, boolean takesE100, boolean canFlex) {
+            boolean hasDualTanks, boolean takesE100, boolean canFlex, int gasEfficiency, int ethanolEfficiency) {
         super(year, doors, power, price, manufacturer, model, country, style, layout, inProduction, displacement,
                 cylinders);
         this.ethanolPercent = ethanolPercent;
         this.hasDualTanks = hasDualTanks;
         this.takesE100 = takesE100;
         this.canFlex = canFlex;
+        this.gasEfficiency = gasEfficiency;
+        this.ethanolEfficiency = ethanolEfficiency;
     }
 
     public int getEthanolPercent() {
@@ -70,7 +74,13 @@ public class Ethanol extends CombustionMotor{
 
     @Override
     public void displayInfo(){
-        
+
+    }
+
+    @Override
+    public String formatEfficiency() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'formatEfficiency'");
     }
 
 
