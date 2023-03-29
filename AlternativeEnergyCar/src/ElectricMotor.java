@@ -1,5 +1,5 @@
-public class ElectricMotor extends AEC{
-    int maxRange;
+public abstract class ElectricMotor extends AEC{
+    protected int maxRange;
 
     public ElectricMotor() {
             maxRange = 0;
@@ -18,7 +18,11 @@ public class ElectricMotor extends AEC{
     public void setMaxRange(int maxRange) {
         this.maxRange = maxRange;
     }
+
+    public abstract String capacityToString();
+    public abstract String formatPower();
     
+
     @Override
     public String toString() {
         return "Electric Car: " + this.carNameToString() + " | " + doors + " door " 

@@ -1,32 +1,57 @@
 public class HydrogenElectric extends ElectricMotor {
-    int storageCapacity;
+    protected String storageFormat;
+    protected double hydrogenCapacity;
+    protected boolean isHybrid;
 
     public HydrogenElectric() {
-        storageCapacity = 0;
+        storageFormat = "NA";
+        hydrogenCapacity = 0.00;
+        isHybrid = false;
     }
 
     public HydrogenElectric(int year, int doors, int power, double price, String manufacturer, String model, String country,
-            String style, String layout, boolean inProduction, int maxRange, int storageCapacity) {
+            String style, String layout, boolean inProduction, int maxRange, String storageFormat, double hydrogenCapacity, boolean isHybird) {
         super(year, doors, power, price, manufacturer, model, country, style, layout, inProduction, maxRange);
-        this.storageCapacity = storageCapacity;
+        this.hydrogenCapacity = hydrogenCapacity;
+        this.storageFormat = storageFormat;
+        this.isHybrid = isHybird;
     }
 
-    public int getStorageCapacity() {
-        return storageCapacity;
+    public String getStorageFormat() {
+        return storageFormat;
     }
 
-    public void setStorageCapacity(int storageCapacity) {
-        this.storageCapacity = storageCapacity;
+    public void setStorageFormat(String storageFormat) {
+        this.storageFormat = storageFormat;
     }
 
+    public double getHydrogenCapacity() {
+        return hydrogenCapacity;
+    }
+
+    public void setHydrogenCapacity(int hydrogenCapacity) {
+        this.hydrogenCapacity = hydrogenCapacity;
+    }
+
+    public boolean isHybrid() {
+        return isHybrid;
+    }
+
+    public void setHybrid(boolean isHybrid) {
+        this.isHybrid = isHybrid;
+    }
     public String capacityToString() {
-        return storageCapacity + " kWh battery. ";
+        return hydrogenCapacity + " kg hydrogen capicity. ";
+    }
+
+    public String formatPower(){
+        return power + " kWs. ";
     }
     
     @Override
     public String toString() {
         return "Hydrogen Fuel Cell Car: " + this.carNameToString() + " | " + doors + " door " 
-        + layout + " " + style + ", " + power + " horsepower. " + capacityToString() + "Max range of " + this.maxRange + " miles."
+        + layout + " " + style + ", " + this.formatPower() + this.capacityToString() + "Max range of " + this.maxRange + " miles."
         +". " + "Product of " + country + ". " + this.inProductionToString() + " " + formattedPrice();
     }
 

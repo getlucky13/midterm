@@ -1,10 +1,20 @@
 public class AEC { 
-    int year, doors, power;
-    double price;
-    String manufacturer, model, country, style, layout;
-    boolean inProduction;
+    protected int year, doors, power;
+    protected double price;
+    protected String manufacturer, model, country, style, layout;
+    protected boolean inProduction;
 
     public AEC() {
+        year = 0;
+        doors = 0;
+        power = 0;
+        manufacturer = "NA";
+        model = "NA";
+        country = "NA";
+        style = "NA";
+        layout = "NA";
+        inProduction = false;
+        price = 0.00;
     }
     
     public AEC(int year, int doors, int power, double price, String manufacturer, String model,
