@@ -70,7 +70,6 @@ public class SolarElectric extends ElectricMotor{
 
     @Override
     public String formatPower() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'formatPower'");
+        return "Stub for testing purpouses";
     }
 }
