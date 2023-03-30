@@ -72,7 +72,7 @@ public class EthanolCombustion extends CombustionMotor{
     }
 
     public String formatFuelInfo(){
-        return "Test";
+        return "EthanolCombustion formatFuelInfo";
     }
 
     @Override
@@ -83,16 +83,16 @@ public class EthanolCombustion extends CombustionMotor{
 
     @Override
     public String formatEngine() {
-        return "formatEngine";
+        return "EthanolCombustion formatEngine";
     }
 
     @Override
     public void displayInfo(){
-
+        System.out.println("EthanolCombustion displayInfo");
     }
 
     @Override
     public String formatEfficiency() {
-        return "formatEfficiency";
+        return "EthanolCombustion formatEfficiency";
     }
 }
