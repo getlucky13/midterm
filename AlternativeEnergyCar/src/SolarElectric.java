@@ -42,7 +42,7 @@ public class SolarElectric extends ElectricMotor{
     }
 
     public String roadLegalFormat() {
-        return "roadLegalFormat";
+        return "SolarElectric roadLegalFormat";
     }
 
     @Override
@@ -70,6 +70,6 @@ public class SolarElectric extends ElectricMotor{
 
     @Override
     public String formatPower() {
-        return "formatPower";
+        return "SolarElectric formatPower";
     }
 }
