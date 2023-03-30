@@ -4,11 +4,12 @@ public class Driver {
     public static void main(String[] args) throws Exception {
         HydrogenElectric mirai = new HydrogenElectric(2020, 4, 136, 65000.00, "Toyota",
         "Mirai", "Japan", "Sedan", "Front motor, front wheel drive", true, 
-        402, "Gas", 5.0, true);
+        402, "Gaseous Hydrogen", 5.0, true);
 
         SolarElectric aptera = new SolarElectric(2024, 3, 126, 47000.00, "Aptera Motors", 
         "Aptera Solar EV", "United States", "Hatchback Coupe", "AWD", 
-        false, 1000, 100, "Three electric wheel hub motors", 25, true);
+        false, 1000, 100, "Three electric wheel hub motors", 25, 
+        true);
 
         HydrogenCombustion rx8 = new HydrogenCombustion(2006, 4, 80, 0, "Mazda", "RX-8 HRE", 
         "Japan", "Quad coupe", "Front mid engine, RWD", false, 1.3, 2, 
@@ -18,15 +19,9 @@ public class Driver {
         "Brazil", "Hatchback", "FWD", false, 1.3, 4, 100, 
         false, true, false, 0, 18);
 
-
-        AEC miraiAEC = new AEC(mirai.year, mirai.doors, mirai.power, mirai.price, mirai.manufacturer, mirai.model, 
-        mirai.country, mirai.style, mirai.layout, mirai.inProduction);
-
-        AEC apteraAEC = new AEC(aptera.year, aptera.doors, aptera.power, aptera.price, aptera.manufacturer, 
-        aptera.model, aptera.country, aptera.style, aptera.layout, aptera.inProduction);
-
-        AEC rx8AEC = new AEC(rx8.year, rx8.doors, rx8.power, rx8.price, rx8.manufacturer, rx8.model, rx8.country, 
-        rx8.style, rx8.layout, rx8.isInProduction());
+        AEC miraiAEC = mirai;
+        AEC apteraAEC = aptera;
+        AEC rx8AEC = rx8;
 
         ArrayList<AEC> polymorphicTest = new ArrayList<>();
         polymorphicTest.add(rx8AEC);

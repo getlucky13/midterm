@@ -53,14 +53,16 @@ public class SolarElectric extends ElectricMotor{
     
     @Override
     public void displayInfo() {
-        System.out.println("Electric Motor Car");
+        System.out.println("Solar Electric Car");
         System.out.println(this.carNameToString());
         System.out.println(formattedPrice());
         System.out.println(doors + " door " + layout + " " + style);
+        System.out.println(engineFormat);
         System.out.println(this.formatPower() + this.formatCapacity());
         System.out.println("Max range: " + maxRange + " miles");
         System.out.println("Product of " + country);
         System.out.println(this.inProductionToString());
+        System.out.println(this.roadLegalFormat());
     }
 
     @Override

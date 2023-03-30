@@ -47,10 +47,11 @@ public class HydrogenElectric extends ElectricMotor {
 
     @Override
     public void displayInfo() {
-        System.out.println("Electric Motor Car");
+        System.out.println("Hydrogen Fuel Cell Car");
         System.out.println(this.carNameToString());
         System.out.println(formattedPrice());
         System.out.println(doors + " door " + layout + " " + style);
+        System.out.println(storageFormat);
         System.out.println(this.formatPower() + this.formatCapacity());
         System.out.println("Max range: " + maxRange + " miles");
         System.out.println("Product of " + country);
