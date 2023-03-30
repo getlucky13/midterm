@@ -1,10 +1,9 @@
 public class Driver {
     public static void main(String[] args) throws Exception {
-        AEC greyFox = new AEC(2005, 5, 250, 24545.00, "Subaru", 
-        "Impreza WRX", "Japan", "Hatchback", "AWD", false);
+        HydrogenElectric mirai = new HydrogenElectric(2020, 4, 136, 65000.00, "Toyota",
+        "Mirai", "Japan", "Sedan", "Front motor, front wheel drive", true, 
+        402, "Gas", 5.0, true);
 
-        String info = greyFox.toString();
-        System.out.println(info);
-        greyFox.displayInfo();
+        SolarElectric 
     }
 }
