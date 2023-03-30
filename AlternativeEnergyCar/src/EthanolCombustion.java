@@ -83,8 +83,7 @@ public class EthanolCombustion extends CombustionMotor{
 
     @Override
     public String formatEngine() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'formatEngine'");
+        return "formatEngine";
     }
 
     @Override
@@ -94,7 +93,6 @@ public class EthanolCombustion extends CombustionMotor{
 
     @Override
     public String formatEfficiency() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'formatEfficiency'");
+        return "formatEfficiency";
     }
 }
