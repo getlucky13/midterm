@@ -39,7 +39,7 @@ public abstract class CombustionMotor extends AEC{
     
     @Override
     public void displayInfo(){
-
+        System.out.println("CombustionMotor displayInfo");
     }
     
 }
