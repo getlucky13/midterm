@@ -47,7 +47,7 @@ public class HydrogenElectric extends ElectricMotor {
 
     @Override
     public void displayInfo() {
-        System.out.println("Alternative Energy Car");
+        System.out.println("Electric Motor Car");
         System.out.println(this.carNameToString());
         System.out.println(formattedPrice());
         System.out.println(doors + " door " + layout + " " + style);
