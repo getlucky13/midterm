@@ -50,18 +50,16 @@ public class HydrogenCombustion extends CombustionMotor{
     
     @Override
     public String formatEngine() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'formatEngine'");
+        return "HydrogenCombustion formatEngine";
     }
     
     @Override
     public String formatEfficiency() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'formatEfficiency'");
+        return "HydrogenCombustion formatEfficiency";
     }
     
     @Override 
     public void displayInfo() {
-        
+        System.out.println("HydrogenCombustion displayInfo");
     }
 }
