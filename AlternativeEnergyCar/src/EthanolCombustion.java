@@ -76,12 +76,6 @@ public class EthanolCombustion extends CombustionMotor{
     }
 
     @Override
-    public String toString() {
-        return "Ethanol [ethanolPercent=" + ethanolPercent + ", hasDualTanks=" + hasDualTanks + ", takesE100="
-                + takesE100 + "]";
-    }
-
-    @Override
     public String formatEngine() {
         return "EthanolCombustion formatEngine";
     }
@@ -94,5 +88,12 @@ public class EthanolCombustion extends CombustionMotor{
     @Override
     public String formatEfficiency() {
         return "EthanolCombustion formatEfficiency";
+    }
+
+    @Override
+    public String toString() {
+        return "EthanolCombustion [ethanolPercent=" + ethanolPercent + ", gasEfficiency=" + gasEfficiency
+                + ", ethanolEfficiency=" + ethanolEfficiency + ", hasDualTanks=" + hasDualTanks + ", takesE100="
+                + takesE100 + ", canFlex=" + canFlex + "]";
     }
 }
