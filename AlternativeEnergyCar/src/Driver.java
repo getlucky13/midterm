@@ -1,4 +1,4 @@
-import java.nio.file.attribute.FileAttribute;
+import java.util.*;
 
 public class Driver {
     public static void main(String[] args) throws Exception {
@@ -18,6 +18,20 @@ public class Driver {
         "Brazil", "Hatchback", "FWD", false, 1.3, 4, 100, 
         false, true, false, 0, 18);
 
-        
+        ArrayList<AEC> blarg = new ArrayList<>();
+        blarg.add(aptera);
+        blarg.add(rx8);
+        blarg.add(mirai);
+        blarg.add(fiat147);
+
+        for(AEC car: blarg) {
+            car.displayInfo();
+        }
+
+        Collections.sort(blarg);
+
+        for(AEC car: blarg){
+            car.displayInfo();
+        }
     }
 }
